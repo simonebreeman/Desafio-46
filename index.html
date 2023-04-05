@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Formulário</title>
+
 	<header>
 		<div class="container">
 		  <img src="caminho/para/o/logo.png" alt="Logo da Empresa">
@@ -13,13 +14,13 @@
 </head>
 <body>
 	<form>
-		<fieldset>
+	<fieldset></fieldset>	
 			<legend>Dados Pessoais</legend>
 			<label for="nome">Nome Completo:</label>
 			<input type="text" id="nome" name="nome" required><br>
 
-			<label for="data-nasc">Data de Nascimento:</label>
-			<input type="date" id="data-nasc" name="data-nasc" required><br>
+			<label for="datanasc">Data de Nascimento:</label>
+			<input type="date" id="data-nasc" name="datanasc" required><br>
 
 			<label for="genero">Gênero:</label>
 			<select id="genero" name="genero" required>
@@ -165,7 +166,66 @@
 </body>
 </html>
 <style>
-	
+	/* Reset de estilos padrões */
+body, form, fieldset, legend, label, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e4f7dd;
+}
+
+fieldset {
+	max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e4f7dd;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #85fa85;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #2ecc71;
+  color: #bdf1c2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
 </style>
-
-
+ 
