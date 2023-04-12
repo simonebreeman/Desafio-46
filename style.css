@@ -1,60 +1,105 @@
-/* Reset de estilos padrões */
-body, form, fieldset, legend, label, input, select, textarea {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+ /* Estilo do cabeçalho da página */
+ header {
+    background-color: #0fac1c6b;
+    color: #0a0a0a;
+    padding: 20px;
+  
+  }
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
 
-/* Estilo do formulário */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #e4f7dd;
-}
+  /* Estilo do formulário */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e4f7dd;
+  }
+  
+  fieldset {
+      max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e4f7dd;
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #85fa85;
+  }
+  
+ 
+   /* Estilo para o botão submit */
+   form input[type="submit"] {
+    background-color: #c2f5d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccf3c9;
+  }
+  
+  
+   /* Estilo para checkboxes */
+   form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  
+  form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
 
-fieldset {
-	max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #e4f7dd;
-}
 
-legend {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="date"],
-input[type="tel"],
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #85fa85;
-}
-
-input[type="submit"] {
-  padding: 10px;
-  background-color: #2ecc71;
-  color: #bdf1c2;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
-  background-color: #27ae60;
-}
+  
