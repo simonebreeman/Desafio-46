@@ -1,6 +1,6 @@
  /* Estilo do cabeçalho da página */
  header {
-    background-color: #0fac1c6b;
+    background-color: #0fac1c8a;
     color: #0a0a0a;
     padding: 20px;
   
@@ -52,7 +52,7 @@
     margin-bottom: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #85fa85;
+    background-color: #85fa8567;
   }
   
  
@@ -68,13 +68,13 @@
   }
   
   input[type="submit"]:hover {
-    background-color: #27ae60;
+    background-color: #27ae5f28;
   }
   
   /* Estilo do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ccf3c9;
+    background-color: #91d48d;
   }
   
   
