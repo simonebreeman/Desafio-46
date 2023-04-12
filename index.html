@@ -8,7 +8,7 @@
 
 	<header>
 		<div class="container">
-		  <img src="logo.png" alt="Logo da Empresa">
+		  <center><img src="logo.png" alt="Logo da Empresa"></center>
 		  <h1><center>Quer fazer parte da nossa equipe?</center></h1>
 		  <p><center>Junte-se a uma equipe de profissionais talentosos e faça a diferença em nossos projetos desafiadores.</center></p>
 		</div>
@@ -99,73 +99,194 @@
 				</fieldset>
 			  </form>
 			  
-			  
+        <fieldset>
+  <legend>Cursos Adicionais</legend>
+  <p>Além da formação técnica profissional ofertada no IFTO, já possui algum outro tipo de curso?</p>
+  <label>
+    <input type="radio" name="possui-curso" value="nao" checked> Não possuo
+  </label>
+  <label>
+    <input type="radio" name="possui-curso" value="sim"> Sim
+  </label>
+    <p>Se sim, selecione as opções abaixo:</p>
+    <label>
+      <input type="checkbox" name="tipo-curso" value="graduacao"> Curso de Graduação
+      <input type="text" name="curso-especifique-graduacao" placeholder="Especifique">
+    </label>
+    <label>
+      <input type="checkbox" name="tipo-curso" value="tecnico"> Curso Técnico
+      <input type="text" name="curso-especifique-tecnico" placeholder="Especifique">
+    </label>
+    <label>
+      <input type="checkbox" name="tipo-curso" value="outros"> Outros
+      <input type="text" name="curso-especifique-outros" placeholder="Especifique">
+    </label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Experiências Profissionais</legend>
+  <p>Possui experiência profissional?</p>
+  <label>
+    <input type="radio" name="possui-exp" value="nao" checked> Não possuo
+  </label>
+  <label>
+    <input type="radio" name="possui-exp" value="sim"> Sim
+  </label>
+  <p>Se sim, preencha as informações abaixo:</p>
+    <label for="ultima-empresa">Última ou Atual Empresa:</label>
+    <input type="text" id="ultima-empresa" name="ultima-empresa"> <br>
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" name="cargo"><br>
+    <label for="datainicio"> Data de Início:</label>
+    <input type="date" id="periodo-atuacao" name="periodo-atuacao"><br>
+    <label for="datafinal"> Data de Saída:</label>
+    <input type="date" id="periodo-atuacao" name="periodo-atuacao"><br>
+    <label for="atividades">Principais Atividades e Responsabilidades:</label>
+    <textarea id="atividades" name="atividades"></textarea>
+  </div>
+</fieldset>
+
+
+
 
 		<fieldset>
-			<legend>Cursos Adicionais</legend>
-			<label for="outros-cursos">Além da formação técnica profissional ofertada no IFTO, já possui algum outro tipo de curso? Se sim, qual?</label>
-			<textarea id="outros-cursos" name="outros-cursos"></textarea>
-		</fieldset>
+    <legend>Experiências Adicionais</legend>
+    <label for="outras-experiencias">Liste suas experiências profissionais anteriores:</label><br>
+    <div class="experiencia">
+        <label for="empresa-1">Empresa:</label>
+        <input type="text" id="empresa-1" name="empresas[]">
+        <label for="cargo-1">Cargo:</label>
+        <input type="text" id="cargo-1" name="cargos[]">
+        <br>
+        <label for="datainicio-1">Data de Início:</label>
+        <input type="date" id="datainicio-1" name="datas-inicio[]">
+        <label for="datafinal-1">Data de Saída:</label>
+        <input type="date" id="datafinal-1" name="datas-fim[]">
+        <br>
+        <label for="atividades-1">Principais Atividades e Responsabilidades:</label>
+        <textarea id="atividades-1" name="atividades[]"></textarea>
+        <br>
+    </div>
+    <button type="button" id="adicionar-experiencia">Adicionar outra experiência</button>
+</fieldset>
 
-		<fieldset>
-			<legend>Experiências Profissionais</legend>
-			<label for="nao-possuo">Não possuo:</label>
-			<input type="radio" id="nao-possuo" name="experiencia" value="Não possuo" checked>
 
-			<label for="ultima-empresa">Última ou Atual Empresa:</label>
-			<input type="text" id="ultima-empresa" name="ultima-empresa">
 
-			<label for="cargo">Cargo:</label>
-			<input type="text" id="cargo" name="cargo">
-
-			<label for="periodo">Período de Atuação (Mês/Ano – Mês/Ano):</label>
-			<input type="text" id="periodo" name="periodo">
-
-			<label for="atividades">Principais Atividades e Responsabilidades:</label>
-			<textarea id="atividades" name="atividades"></textarea>
-		</fieldset>
-
-		<fieldset>
-			<legend>Experiências Adicionais</legend>
-			<label for="outras-experiencias">Experiências Adicionais (Empresa, Cargo, Período, Atividades e Responsabilidades):</label>
-			<textarea id="outras-experiencias" name="outras-experiencias"></textarea>
-		</fieldset>
 
 		<fieldset>
 			<legend>Habilidades Técnicas e Idiomas</legend>
-			<label for="habilidades-tecnicas">Informe quais Habilidades Técnicas Relevantes (softwares, ferramentas, certificações):</label>
-			<textarea id="habilidades-tecnicas" name="habilidades-tecnicas"></textarea>
+<label for="habilidades-tecnicas">Informe quais Habilidades Técnicas Relevantes (softwares, ferramentas, certificações):</label>
+<div>
+  <label>
+    <input type="checkbox" id="habilidades-tecnicas-1" name="habilidades-tecnicas[]" value="softwares"> Softwares
+    <input type="text" name="habilidades-tecnicas-especifique-1" placeholder="Especifique">
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="habilidades-tecnicas-2" name="habilidades-tecnicas[]" value="ferramentas"> Ferramentas
+    <input type="text" name="habilidades-tecnicas-especifique-2" placeholder="Especifique">
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="habilidades-tecnicas-3" name="habilidades-tecnicas[]" value="certificacoes"> Certificações
+    <input type="text" name="habilidades-tecnicas-especifique-3" placeholder="Especifique">
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="habilidades-tecnicas-4" name="habilidades-tecnicas[]" value="outros"> Outros:
+    <input type="text" name="habilidades-tecnicas-especifique-outros" placeholder="Especifique">
+  </label>
+</div>
 
-			<label for="idiomas">Possui habilidades com idiomas ? Qual Língua:</label>
-			<input type="text" id="idiomas" name="idiomas">
+           
+            <br>
+       <br>
+  <legend>Quais idiomas você domina?</legend>
+  <input type="checkbox" id="ingles" name="idiomas-selecionados[]" value="Inglês">
+  <label for="ingles">Inglês</label>
+  <select id="ingles-proficiencia" name="ingles-proficiencia">
+    <option value="Básico">Básico</option>
+    <option value="Intermediário">Intermediário</option>
+    <option value="Avançado">Avançado</option>
+    <option value="Fluente">Fluente</option>
+  </select><br>
+  <input type="checkbox" id="espanhol" name="idiomas-selecionados[]" value="Espanhol">
+  <label for="espanhol">Espanhol</label>
+  <select id="espanhol-proficiencia" name="espanhol-proficiencia">
+    <option value="Básico">Básico</option>
+    <option value="Intermediário">Intermediário</option>
+    <option value="Avançado">Avançado</option>
+    <option value="Fluente">Fluente</option>
+  </select><br>
+  <input type="checkbox" id="outro" name="idiomas-selecionados[]" value="Outro">
+  <label for="outro">Outro (especifique):</label>
+  <input type="text" id="outro-idioma" name="outro-idioma">
+  <select id="outro-proficiencia" name="outro-proficiencia">
+    <option value="Básico">Básico</option>
+    <option value="Intermediário">Intermediário</option>
+    <option value="Avançado">Avançado</option>
+    <option value="Fluente">Fluente</option>
+  </select><br>
+</fieldset>
 
-			<label for="proficiencia">Nível de Proficiência (Básico, Intermediário, Avançado, Fluente):</label>
-			<select id="proficiencia" name="proficiencia">
-				<option value="Básico">Básico</option>
-				<option value="Intermediário">Intermediário</option>
-				<option value="Avançado">Avançado</option>
-				<option value="Fluente">Fluente</option>
-			</select>
+</div>
+
 		</fieldset>
 
 		<fieldset>
-			<legend>Habilidades Comportamentais</legend>
-			<label for="habilidades-comportamentais">Liste três habilidades comportamentais que você considera serem suas principais qualidades profissionais:</label>
-			<textarea id="habilidades-comportamentais" name="habilidades-comportamentais"></textarea>
-		</fieldset>
+  <legend>Habilidades Comportamentais</legend>
+  <label for="habilidades-comportamentais">Liste três habilidades comportamentais que você considera serem suas principais qualidades profissionais:</label>
+  <ol>
+    <li>
+      <label for="habilidade-1">Habilidade 1:</label>
+      <input type="text" id="habilidade-1" name="habilidades-comportamentais[]" placeholder="Insira sua primeira habilidade comportamental">
+    </li>
+    <li>
+      <label for="habilidade-2">Habilidade 2:</label>
+      <input type="text" id="habilidade-2" name="habilidades-comportamentais[]" placeholder="Insira sua segunda habilidade comportamental">
+    </li>
+    <li>
+      <label for="habilidade-3">Habilidade 3:</label>
+      <input type="text" id="habilidade-3" name="habilidades-comportamentais[]" placeholder="Insira sua terceira habilidade comportamental">
+    </li>
+  </ol>
+</fieldset>
 
 		<fieldset> 
 			<legend>Informações Adicionais</legend>
-			<label for="pretensao-salarial">Pretensão Salarial:</label>
-			<input type="text" id="pretensao-salarial" name="pretensao-salarial">
-
+			<label>Pretensão Salarial:</label>
+			<br>
+			<label>
+				<input type="radio" name="pretensao-salarial" value="um-salario-minimo" required>Um salário mínimo
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="pretensao-salarial" value="entre-dois-e-quatro-salarios-minimos" required>Entre dois e quatro salários mínimos
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="pretensao-salarial" value="cinco-salarios-minimos-ou-mais" required>Cinco salários mínimos ou mais
+			</label>
+			<br>
+            <br>
 			<label for="disponibilidade">Disponibilidade para Início:</label>
-			<input type="text" id="disponibilidade" name="disponibilidade" required>
-		</fieldset>
-						
+			<input type="date" id="disponibilidade" name="disponibilidade" required>
+        </fieldset> 
+
+  <fieldset>
+  <legend>Enviar Currículo</legend>
+  <label for="curriculo">Envie seu currículo em PDF ou DOC:</label>
+  <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx">
+</fieldset>
+
+</fieldset>	
 		<input type="submit" value="Enviar">
 		<input type="reset" value="Limpar">
 	</form>
+
+  
+
 
 </body>
 </html>
